@@ -141,8 +141,8 @@ export { InMemoryTaskMessageQueue, InMemoryTaskStore } from '../../experimental/
 export type { SpecTypeName, SpecTypes } from '../../types/specTypeSchema.js';
 export { isSpecType, specTypeSchemas } from '../../types/specTypeSchema.js';
 export type { StandardSchemaV1, StandardSchemaWithJSON } from '../../util/standardSchema.js';
-export { AjvJsonSchemaValidator } from '../../validators/ajvProvider.js';
-export type { CfWorkerSchemaDraft } from '../../validators/cfWorkerProvider.js';
+export type { AjvJsonSchemaValidator } from '../../validators/ajvProvider.js';
+export type { CfWorkerJsonSchemaValidator, CfWorkerSchemaDraft } from '../../validators/cfWorkerProvider.js';
 // fromJsonSchema is intentionally NOT exported here — the server and client packages
 // provide runtime-aware wrappers that default to the appropriate validator via _shims.
 export type { JsonSchemaType, JsonSchemaValidator, jsonSchemaValidator, JsonSchemaValidatorResult } from '../../validators/types.js';
